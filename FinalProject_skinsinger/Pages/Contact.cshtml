@@ -1,0 +1,62 @@
+﻿@page
+@model FinalProject_skinsinger.Pages.ContactModel
+@{
+    ViewData["Title"] = "Contact ";
+}
+
+<div class="text-center">
+    <h1>Contact Us</h1>
+</div>
+<br>
+<br>
+<p>Please leave a detailed message when filling out the form below. We will do our best to reach out to you within 3-4 business days! If 
+    it is time sensitive please call the store at (330)333-3333.
+</p>
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-6">
+    <!-- Bootstrap 5 starter form -->
+    <form id="contactForm">
+
+        <!-- Name input -->
+        <div class="mb-3">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-control" id="name" type="text" placeholder="Name" />
+        </div>
+
+        <!-- Email address input -->
+        <div class="mb-3">
+            <label class="form-label" for="emailAddress">Email Address</label>
+            <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
+        </div>
+
+        <!-- Message input -->
+        <div class="mb-3">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
+        </div>
+
+        <!-- Form submit button -->
+        <div class="d-grid">
+            <button class="btn btn-danger btn-lg" type="submit">Submit</button>
+        </div>
+
+    </form>
+    </div>
+    <div class="col-6">
+        <img src="images/phone.jpg" class="img-fluid" alt="red phone">
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>

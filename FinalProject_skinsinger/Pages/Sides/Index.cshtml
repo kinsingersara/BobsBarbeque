@@ -1,0 +1,42 @@
+﻿@page
+@model FinalProject_skinsinger.Pages.Sides.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.side[0].SideName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.side[0].Price)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.side) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SideName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.SideId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.SideId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.SideId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
